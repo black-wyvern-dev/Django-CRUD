@@ -1,0 +1,18 @@
+{% extends 'layouts/default/page.html' %}
+
+{% load i18n %}
+{% load bootstrap4 %}
+
+{% block content %}
+
+    <h4>{% trans 'Add content' %}</h4>
+    <form action="{% url 'add_content' %}" method="post">
+
+        {% csrf_token %}
+        {% bootstrap_form form%}
+
+        <button class="btn btn-success">{% trans 'Add' %}</button>
+
+    </form>
+
+{% endblock %}

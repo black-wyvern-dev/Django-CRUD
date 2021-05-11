@@ -24,4 +24,17 @@ class Migration(migrations.Migration):
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
         ),
+        
+        # migrations.CreateModel(
+        #     name='ContentPost',
+        #     fields=[
+        #         ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+        #         ('title', models.TextField()),
+        #         ('phone', models.TextField()),
+        #         ('email', models.EmailField(blank=True, max_length=254)),
+        #         # ('location', models.TextField()),
+        #         # ('category', models.TextField()),
+        #         ('content', models.TextField(blank=True, null=True)),
+        #     ],
+        # ),
     ]

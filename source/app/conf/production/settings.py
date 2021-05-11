@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'google_auth',
 
     # Vendor apps
     'bootstrap4',
@@ -93,6 +94,10 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
+]
+
+AUTHENTICATION_BACKENDS = [
+    'google_auth.authentication.GoogleAuthBackend',
 ]
 
 ENABLE_USER_ACTIVATION = True
